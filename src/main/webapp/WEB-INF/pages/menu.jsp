@@ -1,4 +1,3 @@
-
 <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -33,20 +32,27 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link ${activePage eq 'Users' ? 'active' : ''}"
+                           href="${pageContext.request.contextPath}/Users">
+                            Users
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Disabled</a>
                     </li>
-                </ul>
 
+                </ul>
 
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/Login">Login</a>
                     </li>
                 </ul>
-
 
             </div>
         </div>
